@@ -21,7 +21,13 @@ Defining a function does not execute it. Defining the function simply names the 
 
 
 ### call() and apply() methods
+2 alternate ways to call a function is with the call() and apply() methods on a function.
 
+``` 
+methodName.call(parameters);
+
+methodname.apply(parameters);
+```
 
 ### Function Parameters
 
@@ -67,11 +73,7 @@ var someFunciton = new Function("a", "b", "return a * b");
 
 ```
 
-
-
-
-
-### Hoisting
+## Hoisting
 Using the Function Declaration you can call the function before it is declared as long as it is declared in the same scope.
 
 Using the Function Expression or Function Constructor the function must be declared before it is called. 
